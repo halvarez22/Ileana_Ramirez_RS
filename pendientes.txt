@@ -1,0 +1,48 @@
+# Plan de Trabajo para la Próxima Sesión
+
+## Objetivo Principal:
+Hacer el Pipeline de Ventas interactivo con "arrastrar y soltar" (drag & drop) y comenzar el Módulo de Gestión de Comisiones.
+
+---
+
+### **Paso 1: Módulo 2 - Finalizar Mejoras del Pipeline de Ventas**
+
+**Contexto:** Actualmente, el pipeline en `TrackingPage.tsx` es una vista estática. El objetivo es permitir a los administradores reorganizar las propiedades arrastrándolas entre las columnas.
+
+1.  **Implementar Funcionalidad Drag & Drop:**
+    *   **Modificar `TrackingPage.tsx`:**
+        *   Hacer que las tarjetas de propiedades (los `div` dentro de cada columna) sean arrastrables. Se pueden usar los atributos HTML `draggable="true"` y los eventos `onDragStart`.
+        *   Hacer que las columnas del pipeline sean "zonas de destino" para soltar las tarjetas. Se usarán los eventos `onDragOver` (para prevenir el comportamiento por defecto y permitir el 'drop') y `onDrop`.
+        *   Añadir feedback visual: Cuando una tarjeta se arrastra sobre una columna, esta debería resaltar (ej. cambiando su color de fondo) para indicar que es un destino válido.
+
+2.  **Actualizar el Estado de la Propiedad:**
+    *   **En el evento `onDrop`:**
+        *   Identificar la propiedad que se está arrastrando (se puede guardar su `id` en `onDragStart`).
+        *   Identificar la columna de destino (la nueva etapa del pipeline).
+        *   Llamar a la función `updateProperty` del `PropertyContext` para actualizar el campo `pipelineStage` de la propiedad con el nuevo valor.
+        *   El cambio debe reflejarse inmediatamente en la UI, con la tarjeta apareciendo en la nueva columna.
+
+---
+
+### **Paso 2: Módulo 3 - Iniciar Gestión de Comisiones**
+
+**Contexto:** Una vez que una propiedad llega a la etapa "Cerrado", necesitamos un sistema para calcular y registrar la comisión del agente.
+
+1.  **Actualizar el Modelo de Datos:**
+    *   **En `types.ts`:**
+        *   Modificar la interfaz `User` para incluir un campo opcional: `commissionRate?: number;`. Este campo representará el porcentaje de comisión del agente (ej. 0.025 para 2.5%).
+    *   **En `AuthContext.tsx`:**
+        *   Actualizar los datos de ejemplo de los agentes para asignarles una `commissionRate`.
+
+2.  **Crear Lógica de Cálculo (Básico):**
+    *   **En `types.ts`:**
+        *   Modificar la interfaz `Property` para incluir un campo opcional: `commissionAmount?: number;`.
+    *   **En el `PropertyContext` o donde se actualice el `pipelineStage`:**
+        *   Implementar una lógica que se dispare cuando `pipelineStage` se actualice a "Cerrado".
+        *   Esta lógica deberá:
+            1.  Verificar si la propiedad tiene un `agentId` asignado.
+            2.  Buscar los datos de ese agente para obtener su `commissionRate`.
+            3.  Calcular la comisión: `property.price * agent.commissionRate`.
+            4.  Guardar el resultado en el nuevo campo `commissionAmount` de la propiedad.
+
+¡Mañana continuamos con este plan!
