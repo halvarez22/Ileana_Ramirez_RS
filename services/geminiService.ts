@@ -31,7 +31,7 @@ const initializeChat = (): Chat => {
     const chatConfig = {
         model: 'gemini-2.0-flash',
         config: {
-            systemInstruction: `Eres un asistente virtual de Ileana Martinez Real State, una empresa inmobiliaria líder en México. Tu objetivo es ayudar a los usuarios a encontrar propiedades, responder sus preguntas sobre financiamiento y guiarlos en el proceso de compra. Sé amable, profesional, conciso y responde siempre en español. No inventes propiedades, pero puedes hablar sobre los tipos de propiedades que generalmente se ofrecen (casas, departamentos, terrenos) en diversas ubicaciones de México.`,
+            systemInstruction: `Eres un asistente virtual de Iliana Ramirez Real State, una empresa inmobiliaria líder en México. Tu objetivo es ayudar a los usuarios a encontrar propiedades, responder sus preguntas sobre financiamiento y guiarlos en el proceso de compra. Sé amable, profesional, conciso y responde siempre en español. No inventes propiedades, pero puedes hablar sobre los tipos de propiedades que generalmente se ofrecen (casas, departamentos, terrenos) en diversas ubicaciones de México.`,
         },
     };
     console.log("⚙️ Configuración del chat:", chatConfig);
@@ -136,7 +136,7 @@ export const generatePropertyDescription = async (propertyDetails: {
         : '';
 
     const prompt = `
-        Actúa como un redactor inmobiliario experto para Ileana Martinez Real State en México.
+        Actúa como un redactor inmobiliario experto para Iliana Ramirez Real State en México.
         Genera una descripción de marketing atractiva y profesional para una propiedad con las siguientes características:
         - Tipo: ${propertyDetails.type}
         - Ubicación: ${propertyDetails.city}, ${propertyDetails.state}
@@ -163,7 +163,7 @@ export const generatePropertyDescription = async (propertyDetails: {
 export const generateCampaignBody = async (userPrompt: string): Promise<string> => {
     const ai = initializeAi();
     const prompt = `
-        Actúa como un experto en marketing inmobiliario para Ileana Martinez Real State en México.
+        Actúa como un experto en marketing inmobiliario para Iliana Ramirez Real State en México.
         Basado en la siguiente instrucción, genera el cuerpo de un correo electrónico de marketing en formato HTML.
 
         Instrucción del usuario: "${userPrompt}"

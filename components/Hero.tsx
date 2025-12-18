@@ -23,13 +23,13 @@ const Hero: React.FC<HeroProps> = ({ onSearch, isSearching }) => {
 
     return (
         <section id="home" className="relative h-screen min-h-[600px] md:min-h-[700px] flex items-center justify-center text-white">
-            <img src="/images/caratula.png" alt="Ileana Martinez Real State - Encuentra tu hogar ideal" className="absolute inset-0 w-full h-full object-cover" />
+            <img src="/images/caratula.png" alt="Iliana Ramirez Real State - Encuentra tu hogar ideal" className="absolute inset-0 w-full h-full object-cover" />
             
             <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8 w-full max-w-7xl mx-auto">
                 <div className="flex justify-center mb-4 sm:mb-6 md:mb-8">
-                    <img src="/images/logo.png" alt="Ileana Martinez Real State Logo" className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain drop-shadow-lg" />
+                    <img src="/images/logo.png" alt="Iliana Ramirez Real State Logo" className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain drop-shadow-lg" />
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-3 sm:mb-4 md:mb-6 drop-shadow-lg leading-tight">Encuentra tu hogar ideal con Ileana Ramírez</h1>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-3 sm:mb-4 md:mb-6 drop-shadow-lg leading-tight">Encuentra tu hogar ideal con Iliana Ramirez</h1>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-10 drop-shadow-md px-2">Te ayudamos a encontrar la propiedad de tus sueños, con atención personalizada y resultados garantizados.</p>
                 
                 <div className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-6 rounded-2xl shadow-ileana-lg max-w-4xl mx-auto border border-white/20">

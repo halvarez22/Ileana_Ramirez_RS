@@ -9,7 +9,7 @@ interface Servicio {
 const servicios: Servicio[] = [
     {
         componente: "Acompañamiento Personalizado",
-        significado: "Un experto de Ileana Martinez Real State te guía en cada paso, desde la búsqueda hasta la firma.",
+        significado: "Un experto de Iliana Ramirez Real State te guía en cada paso, desde la búsqueda hasta la firma.",
         beneficio: "Ahorro de Tiempo y Esfuerzo."
     },
     {
@@ -45,7 +45,7 @@ const ServiciosPage: React.FC = () => {
                             Nuestros Servicios
                         </h1>
                         <p className="text-lg sm:text-xl md:text-2xl text-orange-100 leading-relaxed px-2">
-                            En Ileana Martinez Real State no solo vendemos propiedades, te acompañamos en todo el proceso con servicios especializados que garantizan tu tranquilidad y éxito.
+                            En Iliana Ramirez Real State no solo vendemos propiedades, te acompañamos en todo el proceso con servicios especializados que garantizan tu tranquilidad y éxito.
                         </p>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Paleta Oficial Ileana Martinez Real State
+        // Paleta Oficial Iliana Ramirez Real State
         'ileana-navy': '#2B2D6E',            // Azul Oscuro del logo - Primary
         'ileana-orange': '#F78A31',          // Naranja del logo - Accent
         'ileana-white': '#FFFFFF',           // Blanco - Secondary

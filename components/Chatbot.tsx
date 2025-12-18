@@ -45,7 +45,7 @@ const Chatbot: React.FC = () => {
             setMessages([{
                 id: 'initial',
                 sender: 'bot',
-                text: '¡Hola! Soy tu asistente virtual de Ileana Martinez Real State, impulsado por Groq AI. ¿En qué puedo ayudarte hoy?'
+                text: '¡Hola! Soy tu asistente virtual de Iliana Ramirez Real State, impulsado por Groq AI. ¿En qué puedo ayudarte hoy?'
             }]);
         }
     }, [isOpen]);
@@ -103,7 +103,7 @@ const Chatbot: React.FC = () => {
                 <div className="bg-ileana-navy text-white p-4 rounded-t-2xl flex justify-between items-center">
                     <div>
                         <h3 className="font-bold text-lg">Asistente Virtual</h3>
-                        <p className="text-sm text-gray-300">Ileana Martinez Real State - Groq AI</p>
+                        <p className="text-sm text-gray-300">Iliana Ramirez Real State - Groq AI</p>
                     </div>
                     <button onClick={() => setIsOpen(false)} className="hover:bg-white/20 p-1 rounded-full"><CloseIcon /></button>
                 </div>
@@ -116,7 +116,7 @@ const Chatbot: React.FC = () => {
                                 {msg.sender === 'bot' && (
                                     <img
                                         src="/images/avatar_face.png"
-                                        alt="Ileana Martinez Avatar"
+                                        alt="Iliana Ramirez Avatar"
                                         className="w-8 h-8 rounded-full border-2 border-ileana-orange flex-shrink-0"
                                     />
                                 )}

@@ -1,12 +1,12 @@
-# 🏢 Ileana Martinez Real State - Plataforma Digital
+# 🏢 Iliana Ramirez Real State - Plataforma Digital
 
 <div align="center">
-<img width="1200" height="475" alt="Ileana Martinez Real State" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="Iliana Ramirez Real State" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
 ## 📋 Descripción
 
-Portal digital completo para la gestión de propiedades y clientes de Ileana Martinez Real State. Esta plataforma permite a los agentes inmobiliarios gestionar propiedades, clientes y realizar seguimientos de manera eficiente con herramientas de IA integradas.
+Portal digital completo para la gestión de propiedades y clientes de Iliana Ramirez Real State. Esta plataforma permite a los agentes inmobiliarios gestionar propiedades, clientes y realizar seguimientos de manera eficiente con herramientas de IA integradas.
 
 ## ✨ Características Principales
 
@@ -129,12 +129,12 @@ npm run preview  # Vista previa de la construcción
 
 ## 📄 Licencia
 
-Este proyecto es propiedad de **Ileana Martinez Real State**. Todos los derechos reservados.
+Este proyecto es propiedad de **Iliana Ramirez Real State**. Todos los derechos reservados.
 
 ## 🤝 Contribución
 
-Para contribuir al proyecto, por favor contacta con el equipo de desarrollo de Ileana Martinez Real State.
+Para contribuir al proyecto, por favor contacta con el equipo de desarrollo de Iliana Ramirez Real State.
 
 ---
 
-**Desarrollado con ❤️ para Ileana Martinez Real State**
+**Desarrollado con ❤️ para Iliana Ramirez Real State**

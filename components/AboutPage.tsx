@@ -23,7 +23,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onNavigateToPropertie
                             Sobre Nosotros
                         </h1>
                         <p className="text-lg sm:text-xl md:text-2xl text-orange-100 leading-relaxed px-2">
-                            En Ileana Martinez Real State, entendemos que encontrar el lugar perfecto para llamar <strong>hogar</strong> es un paso crucial en la vida de cada persona.
+                            En Iliana Ramirez Real State, entendemos que encontrar el lugar perfecto para llamar <strong>hogar</strong> es un paso crucial en la vida de cada persona.
                         </p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onNavigateToPropertie
                                 <div className="relative rounded-2xl overflow-hidden shadow-ileana-lg">
                                     <img
                                         src="/images/caratula.png"
-                                        alt="Ileana Martinez Real State - Nuestra Misión"
+                                        alt="Iliana Ramirez Real State - Nuestra Misión"
                                         className="w-full h-64 sm:h-80 lg:h-96 object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-ileana-navy/20 to-transparent"></div>

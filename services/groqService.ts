@@ -21,7 +21,7 @@ export const sendMessageToGroq = async (message: string): Promise<string> => {
         messages: [
           {
             role: "system",
-            content: `Eres un asistente virtual de Ileana Martinez Real State, una empresa inmobiliaria líder en México. Tu objetivo es ayudar a los usuarios a encontrar propiedades, responder sus preguntas sobre financiamiento y guiarlos en el proceso de compra. Sé amable, profesional, conciso y responde siempre en español. No inventes propiedades, pero puedes hablar sobre los tipos de propiedades que generalmente se ofrecen (casas, departamentos, terrenos) en diversas ubicaciones de México.`
+            content: `Eres un asistente virtual de Iliana Ramirez Real State, una empresa inmobiliaria líder en México. Tu objetivo es ayudar a los usuarios a encontrar propiedades, responder sus preguntas sobre financiamiento y guiarlos en el proceso de compra. Sé amable, profesional, conciso y responde siempre en español. No inventes propiedades, pero puedes hablar sobre los tipos de propiedades que generalmente se ofrecen (casas, departamentos, terrenos) en diversas ubicaciones de México.`
           },
           {
             role: "user",
@@ -121,7 +121,7 @@ export const generatePropertyDescriptionWithGroq = async (propertyDetails: any):
       : '';
 
     const prompt = `
-    Actúa como un redactor inmobiliario experto para Ileana Martinez Real State en México.
+    Actúa como un redactor inmobiliario experto para Iliana Ramirez Real State en México.
     Genera una descripción de marketing atractiva y profesional para una propiedad con las siguientes características:
     - Tipo: ${propertyDetails.type}
     - Ubicación: ${propertyDetails.city}, ${propertyDetails.state}

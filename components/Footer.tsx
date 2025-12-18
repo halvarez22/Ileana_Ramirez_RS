@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                     <div className="col-span-1 sm:col-span-2 md:col-span-1">
                         <div className="flex items-center space-x-2 mb-4">
                             <div className="bg-white/95 backdrop-blur-sm rounded-lg p-2 shadow-lg border border-white/20">
-                                <img src="/images/Logo.png" alt="Ileana Martinez Real State Logo" className="w-12 h-12 object-contain" onError={(e) => console.error('Footer logo failed to load:', e)} />
+                                <img src="/images/Logo.png" alt="Iliana Ramirez Real State Logo" className="w-12 h-12 object-contain" onError={(e) => console.error('Footer logo failed to load:', e)} />
                             </div>
                         </div>
                         <p className="text-ileana-white font-body leading-relaxed">Tu aliada confiable en el sector inmobiliario, dedicada a hacer realidad tus sueños de hogar con atención personalizada.</p>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-ileana-orange text-center text-ileana-orange">
-                    <p>&copy; {new Date().getFullYear()} Ileana Martinez Real State. Todos los derechos reservados.</p>
+                    <p>&copy; {new Date().getFullYear()} Iliana Ramirez Real State. Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>
