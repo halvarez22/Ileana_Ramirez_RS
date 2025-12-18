@@ -5,7 +5,7 @@ import { useAuth } from './AuthContext';
 const Logo = () => (
     <div className="flex items-center h-12 overflow-visible">
         <img
-            src="/images/logo.png"
+            src="/images/Logo.png"
             alt="Ileana Martinez Real State Logo"
             className="h-10 w-auto object-contain transform scale-125 origin-center -my-1"
         />

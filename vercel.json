@@ -1,9 +1,14 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "vite",
+  "framework": null,
   "installCommand": "npm install",
   "devCommand": "npm run dev",
+  "functions": {
+    "src/**/*.{js,ts,jsx,tsx}": {
+      "maxDuration": 10
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",

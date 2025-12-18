@@ -21,21 +21,14 @@ Portal digital completo para la gestión de propiedades y clientes de Ileana Mar
 
 ## 🚀 Despliegue en Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/halvarez22/Ileana_Ramirez_RS)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/halvarez22/Inverlan_new_portal)
 
 ### Configuración Automática
 
-1. **Conecta tu repositorio** a Vercel desde GitHub: `halvarez22/Ileana_Ramirez_RS`
-2. **Configura las variables de entorno**:
-   * `VITE_GROQ_API_KEY`: Tu clave de API de Groq AI
-   * `WHATSAPP_PHONE_NUMBER`: `524777871635`
-3. **Despliega**: Vercel detectará automáticamente la configuración optimizada
-
-### Estado del Despliegue
-- ✅ **Repositorio**: [halvarez22/Ileana_Ramirez_RS](https://github.com/halvarez22/Ileana_Ramirez_RS)
-- ✅ **Firebase**: Configurado para proyecto `ileanaramirez-9e718`
-- ✅ **Build**: Optimizado con `vercel.json`
-- ✅ **Variables**: Gestionadas correctamente
+1. **Conecta tu repositorio** a Vercel desde GitHub
+2. **Configura las variables de entorno**:  
+   * `GEMINI_API_KEY`: Tu clave de API de Google Gemini
+3. **Despliega**: Vercel detectará automáticamente la configuración
 
 ## 🛠️ Desarrollo Local
 
@@ -43,32 +36,28 @@ Portal digital completo para la gestión de propiedades y clientes de Ileana Mar
 
 * Node.js 18.x o superior
 * npm 9.x o superior
-* Clave API de Groq AI (para funcionalidades de IA)
+* Clave API de Gemini (para funcionalidades de IA)
 
 ### Instalación
 
-1. **Clona el repositorio**:
+1. **Clona el repositorio**:  
    ```bash
-   git clone https://github.com/halvarez22/Ileana_Ramirez_RS.git
-   cd Ileana_Ramirez_RS
+   git clone https://github.com/halvarez22/Inverlan_new_portal.git
+   cd Inverlan_new_portal
    ```
 
-2. **Instala las dependencias**:
+2. **Instala las dependencias**:  
    ```bash
    npm install
    ```
 
-3. **Configura las variables de entorno**:
+3. **Configura las variables de entorno**:  
    ```bash
    cp .env.example .env.local
    ```
-   Edita `.env.local` y configura:
-   ```env
-   VITE_GROQ_API_KEY=tu_clave_de_groq_aqui
-   WHATSAPP_PHONE_NUMBER=524777871635
-   ```
+   Edita `.env.local` y configura tu `GEMINI_API_KEY`
 
-4. **Inicia el servidor de desarrollo**:
+4. **Inicia el servidor de desarrollo**:  
    ```bash
    npm run dev
    ```
